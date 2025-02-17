@@ -1,0 +1,44 @@
+:root {
+  --main-background-color: #242424;
+  --main-color: rgba(255, 255, 255, 0.87);
+  --main-color-disabled: rgb(101, 99, 99);
+
+  --list-item-hover-background-color: rgba(118, 118, 118, 0.08);
+
+  --main-border-radius: 8px;
+
+  --main-box-shadow: 0px 2px 4px 0px rgba(47, 47, 47, 0.04), 0px 4px 16px 0px rgba(47, 47, 47, 0.12);
+
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: var(--main-color);
+  background-color: var(--main-background-color);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+}
+
+input {
+  display: flex;
+}
+
+hr {
+  margin: 4px 0;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --main-background-color: #ffffff;
+    --main-color: #213547;
+    --main-color-disabled: #9a9ea1;
+  }
+}
