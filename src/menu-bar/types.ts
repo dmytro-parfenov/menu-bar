@@ -16,8 +16,3 @@ export interface MenuBarItem<ActionPayload = unknown> {
     readonly properties?: MenuBarItemProperties<ActionPayload>;
     readonly component: MenuBarItemComponent<ActionPayload>;
 }
-
-export interface CompoundMenuBarItem<ActionPayload = unknown> extends MenuBarItem<ActionPayload> {
-    add<ActionPayload = unknown>(item: MenuBarItem<ActionPayload>): void;
-    delete<ActionPayload = unknown>(item: MenuBarItem<ActionPayload>): void;
-}

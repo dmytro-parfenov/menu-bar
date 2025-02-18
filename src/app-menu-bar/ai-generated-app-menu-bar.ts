@@ -5,13 +5,13 @@ import { MenuBarListSectionItemComponent } from "../menu-bar/components/menu-bar
 import { MenuBarListSubmenuItemComponent } from "../menu-bar/components/menu-bar-list-submenu-item.component";
 import { MenuBarMenuItemComponent } from "../menu-bar/components/menu-bar-menu-item.component";
 import { MenuBarMenuComponent } from "../menu-bar/components/menu-bar-menu.component";
-import { compoundMenuBarItemFactory } from "../menu-bar/compound-menu-bar-item-factory";
+import { compoundMenuBarItem } from "../menu-bar/compound-menu-bar-item";
 import { v4 } from "uuid";
 
 /**
  * File
  */
-const file = compoundMenuBarItemFactory({
+const file = compoundMenuBarItem({
   id: v4(),
   properties: {
     title: "📁 File",
@@ -50,7 +50,7 @@ file.add({
   component: MenuBarListItemComponent,
 });
 
-const download = compoundMenuBarItemFactory({
+const download = compoundMenuBarItem({
   id: v4(),
   properties: {
     title: `Download`,
@@ -59,7 +59,7 @@ const download = compoundMenuBarItemFactory({
   component: MenuBarListSubmenuItemComponent,
 });
 
-const microsoftWord = compoundMenuBarItemFactory({
+const microsoftWord = compoundMenuBarItem({
   id: v4(),
   properties: {
     title: `Microsoft Word`,
@@ -82,7 +82,7 @@ microsoftWord.add({
   component: MenuBarListItemComponent,
 });
 
-const nestedLevel3 = compoundMenuBarItemFactory({
+const nestedLevel3 = compoundMenuBarItem({
   id: v4(),
   properties: {
     title: `Nested level 3`,
@@ -91,7 +91,7 @@ const nestedLevel3 = compoundMenuBarItemFactory({
   component: MenuBarListSubmenuItemComponent,
 });
 
-const nestedLevel4 = compoundMenuBarItemFactory({
+const nestedLevel4 = compoundMenuBarItem({
   id: v4(),
   properties: {
     title: `Nested level 4`,
@@ -99,7 +99,7 @@ const nestedLevel4 = compoundMenuBarItemFactory({
   },
   component: MenuBarListSubmenuItemComponent,
 });
-const nestedLevel5 = compoundMenuBarItemFactory({
+const nestedLevel5 = compoundMenuBarItem({
   id: v4(),
   properties: {
     title: `Nested level 5`,
@@ -107,7 +107,7 @@ const nestedLevel5 = compoundMenuBarItemFactory({
   },
   component: MenuBarListSubmenuItemComponent,
 });
-const nestedLevel6 = compoundMenuBarItemFactory({
+const nestedLevel6 = compoundMenuBarItem({
   id: v4(),
   properties: {
     title: `Nested level 6`,
@@ -137,7 +137,7 @@ download.add({
   component: MenuBarListItemComponent,
 });
 
-const downloadSection = compoundMenuBarItemFactory({
+const downloadSection = compoundMenuBarItem({
   id: v4(),
   component: MenuBarListSectionItemComponent,
 });
@@ -160,7 +160,7 @@ file.add({
   component: MenuBarListItemComponent,
 });
 
-const versionHistory = compoundMenuBarItemFactory({
+const versionHistory = compoundMenuBarItem({
   id: v4(),
   properties: {
     title: `Version history`,
@@ -197,7 +197,7 @@ file.add({
 /**
  * Edit
  */
-const edit = compoundMenuBarItemFactory({
+const edit = compoundMenuBarItem({
   id: v4(),
   properties: {
     title: "Edit",
@@ -221,7 +221,7 @@ edit.add({
   component: MenuBarListItemComponent,
 });
 
-const cutSection = compoundMenuBarItemFactory({
+const cutSection = compoundMenuBarItem({
   id: v4(),
   component: MenuBarListSectionItemComponent,
 });
@@ -246,7 +246,7 @@ edit.add({
 /**
  * View
  */
-const view = compoundMenuBarItemFactory({
+const view = compoundMenuBarItem({
   id: v4(),
   properties: {
     title: "View",
@@ -254,7 +254,7 @@ const view = compoundMenuBarItemFactory({
   component: MenuBarMenuItemComponent,
 });
 
-const mode = compoundMenuBarItemFactory({
+const mode = compoundMenuBarItem({
   id: v4(),
   properties: {
     title: `✏️ Mode`,
@@ -279,7 +279,7 @@ mode.add({
 
 view.add(mode);
 
-const optionsSection = compoundMenuBarItemFactory({
+const optionsSection = compoundMenuBarItem({
   id: v4(),
   component: MenuBarListSectionItemComponent,
 });
@@ -311,7 +311,7 @@ view.add({
 /**
  * Window
  */
-const window = compoundMenuBarItemFactory({
+const window = compoundMenuBarItem({
   id: v4(),
   properties: {
     title: "Window",
@@ -338,7 +338,7 @@ window.add({
 /**
  * Help
  */
-const help = compoundMenuBarItemFactory({
+const help = compoundMenuBarItem({
   id: v4(),
   properties: {
     title: "Help",
@@ -346,7 +346,7 @@ const help = compoundMenuBarItemFactory({
   component: MenuBarMenuItemComponent,
 });
 
-const aboutSection = compoundMenuBarItemFactory({
+const aboutSection = compoundMenuBarItem({
   id: v4(),
   component: MenuBarListSectionItemComponent,
 });
@@ -377,7 +377,7 @@ help.add({
 });
 
 // Test menu item
-const test = compoundMenuBarItemFactory({
+const test = compoundMenuBarItem({
   id: v4(),
   properties: {
     title: "🧪 Test",
@@ -403,7 +403,7 @@ test.add({
 });
 
 // menu item for testing purposes
-const testSubMenu = compoundMenuBarItemFactory({
+const testSubMenu = compoundMenuBarItem({
   id: v4(),
   properties: {
     title: "Submenu",
@@ -433,7 +433,7 @@ test.add(testSubMenu);
 /**
  * Menu bar
  */
-export const aiGeneratedAppMenuBar = compoundMenuBarItemFactory({
+export const aiGeneratedAppMenuBar = compoundMenuBarItem({
   id: v4(),
   component: MenuBarMenuComponent,
 });
