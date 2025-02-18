@@ -229,6 +229,9 @@ view.add(mode);
 
 const optionsSection = compoundMenuBarItemFactory({
     id: v4(),
+    properties: {
+        title: 'Sidebars'
+    },
     component: MenuBarListSectionItemComponent
 });
 
