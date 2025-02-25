@@ -52,8 +52,7 @@ file.add({
 const download = compoundMenuBarItem({
     id: v4(),
     properties: {
-        title: `Download`,
-        label: '›'
+        title: `Download`
     },
     component: MenuBarListSubmenuItemComponent
 });
@@ -61,8 +60,7 @@ const download = compoundMenuBarItem({
 const microsoftWord = compoundMenuBarItem({
     id: v4(),
     properties: {
-        title: `Microsoft Word`,
-        label: '›'
+        title: `Microsoft Word`
     },
     component: MenuBarListSubmenuItemComponent
 });
@@ -117,7 +115,6 @@ const versionHistory = compoundMenuBarItem({
     id: v4(),
     properties: {
         title: `Version history`,
-        label: '›',
         disabled: true
     },
     component: MenuBarListSubmenuItemComponent
@@ -205,7 +202,7 @@ const mode = compoundMenuBarItem({
     id: v4(),
     properties: {
         title: `✏️ Mode`,
-        label: '›',
+        label: `⌘ M`,
         tooltip: `Please choose the mode you would like to use`
     },
     component: MenuBarListSubmenuItemComponent

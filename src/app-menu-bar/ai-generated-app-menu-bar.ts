@@ -54,7 +54,6 @@ const download = compoundMenuBarItem({
   id: v4(),
   properties: {
     title: `Download`,
-    label: "›",
   },
   component: MenuBarListSubmenuItemComponent,
 });
@@ -63,7 +62,6 @@ const microsoftWord = compoundMenuBarItem({
   id: v4(),
   properties: {
     title: `Microsoft Word`,
-    label: "›",
   },
   component: MenuBarListSubmenuItemComponent,
 });
@@ -86,7 +84,6 @@ const nestedLevel3 = compoundMenuBarItem({
   id: v4(),
   properties: {
     title: `Nested level 3`,
-    label: "›",
   },
   component: MenuBarListSubmenuItemComponent,
 });
@@ -95,7 +92,6 @@ const nestedLevel4 = compoundMenuBarItem({
   id: v4(),
   properties: {
     title: `Nested level 4`,
-    label: "›",
   },
   component: MenuBarListSubmenuItemComponent,
 });
@@ -103,7 +99,6 @@ const nestedLevel5 = compoundMenuBarItem({
   id: v4(),
   properties: {
     title: `Nested level 5`,
-    label: "›",
   },
   component: MenuBarListSubmenuItemComponent,
 });
@@ -111,7 +106,6 @@ const nestedLevel6 = compoundMenuBarItem({
   id: v4(),
   properties: {
     title: `Nested level 6`,
-    label: "›",
   },
   component: MenuBarListSubmenuItemComponent,
 });
@@ -164,7 +158,6 @@ const versionHistory = compoundMenuBarItem({
   id: v4(),
   properties: {
     title: `Version history`,
-    label: "›",
     disabled: true,
   },
   component: MenuBarListSubmenuItemComponent,
@@ -258,7 +251,6 @@ const mode = compoundMenuBarItem({
   id: v4(),
   properties: {
     title: `✏️ Mode`,
-    label: "›",
   },
   component: MenuBarListSubmenuItemComponent,
 });
@@ -407,7 +399,6 @@ const testSubMenu = compoundMenuBarItem({
   id: v4(),
   properties: {
     title: "Submenu",
-    label: "›",
   },
   component: MenuBarListSubmenuItemComponent,
 });

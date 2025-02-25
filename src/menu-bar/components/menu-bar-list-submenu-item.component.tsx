@@ -6,6 +6,7 @@ export const MenuBarListSubmenuItemComponent: MenuBarItemComponent = ({ title, l
         <StyledListItemContent>
             <span>{title}</span>
             {label && <StyledListItemLabel>{label}</StyledListItemLabel>}
+            <span>›</span>
         </StyledListItemContent>
         <StyledFloatingEndMenu>
             {children?.map(item => {
